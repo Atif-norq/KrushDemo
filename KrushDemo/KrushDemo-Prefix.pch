@@ -1,0 +1,26 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "FontHelper.h"
+    #import <FacebookSDK/FacebookSDK.h>
+    #import "FacebookHelper.h"
+    #import "ApiResponseParser.h"
+    #import "UtilityHelper.h"
+
+#define getColorForRGBA(r,g,b,a) [UIColor colorWithRed:r/255.f green:g/255.f blue:b/255.f alpha:a]
+
+static NSString * const kGooglePlusClientId = @"95845011553-c08q77c34in6d02ugf82j5cjub87f4gr.apps.googleusercontent.com";
+
+#endif
